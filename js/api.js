@@ -1,6 +1,6 @@
 // js/api.js — thin fetch wrappers for both APIs.
-export const API_ARTISTS = "/api/artists/";
-export const API_ALBUMS  = "/api/albums/";
+export const API_ARTISTS = "/api/artists";
+export const API_ALBUMS  = "/api/albums";
 
 async function get(base, path, params = {}) {
   const url = new URL(base + path);
