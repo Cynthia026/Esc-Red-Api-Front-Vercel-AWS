@@ -3,7 +3,7 @@ export const API_ARTISTS = "/api/artists";
 export const API_ALBUMS  = "/api/albums";
 
 async function get(base, path, params = {}) {
-  const url = new URL(base + path);
+  const url = new URL(base + path, window.location.origin);
   for (const [k, v] of Object.entries(params)) {
     if (v !== undefined && v !== null && v !== "") url.searchParams.set(k, v);
   }
