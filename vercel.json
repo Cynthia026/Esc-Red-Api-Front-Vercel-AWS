@@ -5,8 +5,16 @@
       "destination": "http://44.194.118.124:5000/:match*"
     },
     {
+      "source": "/img/albums/:match*",
+      "destination": "http://44.194.118.124:5000/photos/albums/:match*"
+    },
+    {
       "source": "/api/artists/:match*",
       "destination": "http://35.175.53.48:8000/:match*"
+    },
+    {
+      "source": "/img/artists/:match*",
+      "destination": "http://35.175.53.48:8000/photos/artists/:match*"
     }
   ]
 }
